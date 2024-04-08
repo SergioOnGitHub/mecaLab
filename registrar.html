@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+
+        <link href="styles/styles.css" rel="stylesheet" type="text/css" />
+        <title>Document</title>
+    </head>
+    <body>
+        <section class="sidebar">
+            <div>
+                <img src="images/tecLogo.png" alt="Cortadora" height="50" >
+            </div>
+            <div><a class="sidebar-item">Dashboard</a></div>
+            <div><a class="sidebar-item">Registrar Usuarios</a></div>
+            <div><a class="sidebar-item">Máquinas</a></div>
+        </section>
+
+        <section class="container-main">
+            <h1 class="titulo">Registrar Usuarios</h1>
+            <table class="tabla-registros">
+                <thead>
+                    <tr class="fila-gris">
+                        <th>Matrícula</th>
+                        <th>Nombre</th>
+                        <th>Fecha de Inscripción</th>
+                        <th>Carrera</th>
+                        <th>Activaciones</th>
+                        <th>Estado</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><input type="text" placeholder=""></td>
+                        <td><input type="text" placeholder=""></td>
+                        <td>08/04/2024 - 14:30</td> 
+                        <td><input type="text" placeholder=""></td>
+                        <td>0</td> 
+                        <td><button class="activo">+</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </body>
+</html>

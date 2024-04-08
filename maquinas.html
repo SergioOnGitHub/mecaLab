@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+
+        <link href="styles/styles.css" rel="stylesheet" type="text/css" />
+        <title>Document</title>
+    </head>
+    <body>
+        <section class="sidebar">
+            <div>
+                <img src="images/tecLogo.png" alt="Cortadora" height="50" >
+            </div>
+            <div><a class="sidebar-item">Dashboard</a></div>
+            <div><a class="sidebar-item">Registrar Usuarios</a></div>
+            <div><a class="sidebar-item">Máquinas</a></div>
+        </section>
+        <section class="container main">
+            <h1>Máquinas</h1>
+            <table class="table-maquinas">
+                <thead>
+                    <tr>
+                        <th>Imagen</th>
+                        <th>Máquina</th>
+                        <th>Hora de encendido</th>
+                        <th>Hora de apagado</th>
+                        <th>Usos</th>
+                        <th>Disponible</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>
+                            <img src="images/cortadora.jpg" alt="Cortadora" height="50" >
+                        </td>
+                        <td>Máquina 1</td>
+                        <td>00:00</td>
+                        <td>00:00</td>
+                        <td>31</td>
+                        <td>
+                            <div class="estado-ocupado">
+                                Ocupado
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <img src="images/impresora.png" alt="Impresora" height="50" >
+                        </td>
+                        <td>Máquina 2</td>
+                        <td>00:00</td>
+                        <td>00:00</td>
+                        <td>12</td>
+                        <td>
+                            <div class="estado-disponible">
+                                Disponible
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <img src="images/cortadora.jpg" alt="Cortadora" height="50" >
+                        </td>
+                        <td>Máquina 3</td>
+                        <td>00:00</td>
+                        <td>00:00</td>
+                        <td>36</td>
+                        <td>
+                            <div class="estado-disponible">
+                                Disponible
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <img src="images/impresora.png" alt="Impresora" height="50" >
+                        </td>
+                        <td>Máquina 4</td>
+                        <td>00:00</td>
+                        <td>00:00</td>
+                        <td>21</td>
+                        <td>
+                            <div class="estado-disponible">
+                                Disponible
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <img src="images/cortadora.jpg" alt="Cortadora" height="50" >
+                        </td>
+                        <td>Máquina 5</td>
+                        <td>00:00</td>
+                        <td>00:00</td>
+                        <td>10</td>
+                        <td>
+                            <div class="estado-ocupado">
+                                Ocupado
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <img src="images/impresora.png" alt="Impresora" height="50" >
+                        </td>
+                        <td>Máquina 6</td>
+                        <td>00:00</td>
+                        <td>00:00</td>
+                        <td>30</td>
+                        <td>
+                            <div class="estado-disponible">
+                                Disponible
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+    </body>
+
+</html>
