@@ -9,6 +9,7 @@
     <title>Document</title>
 </head>
 <body>
+    <div class="logistics">
     <section class="sidebar">
         <div>
             <img src="images/tecLogo.png" alt="Cortadora" height="50" >
@@ -20,6 +21,7 @@
     <section class="main-content">
         <h1>Dashboard</h1>
         <div class="logistics">
+            
             <div class="logistic-display">
                 <div class="losgistic-display-item">
                     <p>Máquinas en uso</p>
@@ -67,61 +69,38 @@
 
         </div>
 
-        <div class="statistics">
-            <img class="statistics-image" src="images/genericgraph.svg">
+        <div> 
+            <!-- Formulario para agregar máquina -->
+    <form action="insertar.php" method="post">
+        <label for="nombre">Nombre de la máquina:</label>
+        <input type="text" id="nombre" name="nombre" required>
+        <label for="ubicacion">Ubicación:</label>
+        <input type="text" id="ubicacion" name="ubicacion" required>
+        <label for="estado">Estado:</label>
+        <input type="text" id="estado" name="estado" required>
+        <button type="submit">Agregar Máquina</button>
+    </form>
         </div>
 
         <div class="users">
-            <h1>Usuarios Registrados</h1>
+            <h1>Máquinas Registradas</h1>
             <table class="users-table">
                 <thead>
                     <tr>
-                        <th>Matrícula</th>
                         <th>Nombre</th>
-                        <th>Fecha de Inscripción</th>
-                        <th>Carrera</th>
-                        <th>Activaciones</th>
+                        <th>ubicacion</th>
                         <th>Estado</th>
+                        <th>Acción</th>
                     </tr>
                 </thead>
 
                 <tbody>
-                    <tr>
-                        <td>A01737331</td>
-                        <td>Sergio David Pimentel Pérez</td>
-                        <td>07/04/2024</td>
-                        <td>ITC</td>
-                        <td>31</td>
-                        <td>Activo</td>
-                    </tr>
-                    <tr>
-                        <td>A01737331</td>
-                        <td>Sergio David Pimentel Pérez</td>
-                        <td>07/04/2024</td>
-                        <td>ITC</td>
-                        <td>31</td>
-                        <td>Activo</td>
-                    </tr>
-                    <tr>
-                        <td>A01737331</td>
-                        <td>Sergio David Pimentel Pérez</td>
-                        <td>07/04/2024</td>
-                        <td>ITC</td>
-                        <td>31</td>
-                        <td>Activo</td>
-                    </tr>
-                    <tr>
-                        <td>A01737331</td>
-                        <td>Sergio David Pimentel Pérez</td>
-                        <td>07/04/2024</td>
-                        <td>ITC</td>
-                        <td>31</td>
-                        <td>Activo</td>
-                    </tr>
+                    <?php include './mostrar.php'?>
                 </tbody>
             </table>
             
         </div>
       </section> 
+    </div>
 </body>
 </html>
